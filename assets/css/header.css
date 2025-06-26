@@ -85,6 +85,13 @@ body {
   font-weight: 500;
 }
 
+.icon-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .menu-toggle {
   display: none;
   font-size: 2rem;

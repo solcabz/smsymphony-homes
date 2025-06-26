@@ -140,3 +140,27 @@ body {
     display: block;
   }
 }
+
+
+#backToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  background-color: #000f73;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #1b2da0;
+}
+
+#backToTop svg {
+  display: block;
+}

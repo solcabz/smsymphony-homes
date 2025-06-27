@@ -12,6 +12,7 @@ h1 {
   font-weight: 300;
 }
 
+
 /* home */
 .home-section {
   background-image: url(../images/KeyVisual.jpg);
@@ -42,6 +43,19 @@ h1 {
   z-index: 2;
   margin: 0;
   color: #fff;
+}
+
+.smdc-desc-hero{
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  width: 40%;
+  white-space: pre; /* allows line breaks + wraps text */
+  color: #fff; /* ensure readability */
+  text-align: left; /* ensure it's aligned left */
+  font-size: 1.6rem;
 }
 
 /* kv */
@@ -165,7 +179,7 @@ h1 {
 }
 
 .title-wrapper p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     width: 28%;
 }
@@ -205,10 +219,11 @@ h1 {
   white-space: pre; /* allows line breaks + wraps text */
   color: #fff; /* ensure readability */
   text-align: left; /* ensure it's aligned left */
+  font-size: 1.2rem;
 }
 
 .smdc-desc {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -237,6 +252,10 @@ h1 {
    .map-container {
     height: 100%;
     flex-direction: column;
+  }
+
+  .smdc-desc{
+    font-size: 1.4rem;
   }
 
   .map-info {

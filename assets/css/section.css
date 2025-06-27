@@ -1,0 +1,287 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section-container {
+  height: 100dvh;
+  width: 100%;
+}
+
+h1 {
+  font-size:4rem;
+  font-weight: 300;
+}
+
+/* home */
+.home-section {
+  background-image: url(../images/KeyVisual.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax on desktop */
+  padding: 0 80px;
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.home-title {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  font-size: 3rem;
+  color: #fff;
+}
+
+/* kv */
+.kv-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+  padding: 0 0;
+}
+
+.kv-section video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.kv-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.video-overlay-text {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  top: 20%;
+  left: 10%;
+  font-size: 2rem;
+  max-width: 80%;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+/* MAP */
+.map-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* padding: 0 80px; */
+}
+.map-info {
+  width: 35%;
+  height: 100dvh;
+  padding-left: 80px;
+  padding-right: 20px;
+  background-color: #1490df;
+  position: relative;
+  background-image: url(../images/note-white.png);
+  background-size: 1150px auto; /* example width */
+  background-repeat: no-repeat;
+  background-position: right calc(100% - 25px); /* move up 15px from bottom */
+}
+
+.image-map-wrapper {
+  width: 65%;
+}
+
+.image-map-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover the container */
+  position: top center;
+}
+
+.map-wrapper{
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+}
+
+.map-wrapper h2{
+  width: 80%;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* sdp */
+.sdp-section {
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0) 0%, rgba(0,0,0,0) 80%), 
+    url(../images/sdp.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax on desktop */
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+.title-wrapper{
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+}
+
+.sdp-title{
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.title-wrapper p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    width: 55%;
+}
+
+/* about smdc */
+.smdc-section{
+  background-image: url(../images/AboutSMDC.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax on desktop */
+  min-height: 100vh;
+  position: relative;
+  padding: 0;
+}
+
+.smdc-wrapper{
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+}
+
+.smdc-wrapper a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.smdc-wrapper a:hover{
+  color: #f0cb51;
+}
+
+.smdc-desc {
+  width: 40%;
+  white-space: pre; /* allows line breaks + wraps text */
+  color: #fff; /* ensure readability */
+  text-align: left; /* ensure it's aligned left */
+}
+
+.smdc-desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-section {
+    background-position: right center;
+  }
+  .home-title {
+    top: 12rem;
+    left: 2rem;
+    font-size: 3rem;
+  }
+  .video-overlay-text {
+    top: 15%;
+    left: 5%;
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+  .image-map-wrapper {
+    width: 100%;
+    height: 40vh; /* or adjust as needed */
+  }
+
+
+   .map-container {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .map-info {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    background-size: contain;
+    background-position: center bottom;
+    text-align: center;
+  }
+
+  .image-map-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-map-wrapper img {
+    height: 100%;
+  }
+
+  .map-wrapper {
+    position: static;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .map-wrapper h2 {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .home-title {
+    top: 10rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+  .video-overlay-text {
+    top: 10%;
+    left: 5%;
+    font-size: 1.2rem;
+    max-width: 95%;
+  }
+
+  .image-map-wrapper {
+    height: 30vh; /* smaller height on mobile */
+  }
+}

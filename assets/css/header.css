@@ -54,7 +54,7 @@ body {
   margin: 0;
   padding: 0;
   gap: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .menu-item a {
@@ -63,6 +63,7 @@ body {
   color: #203d83;
   font-weight: 500;
   align-items: center;
+  font-weight: 600;
 }
 
 .menu-item img {
@@ -82,7 +83,8 @@ body {
 
 .contact{
   color: #000f73;
-  font-weight: 500;
+  font-weight: 600;
+
 }
 
 .icon-wrapper{

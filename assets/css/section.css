@@ -12,13 +12,15 @@ h1 {
   font-weight: 300;
 }
 
+
 /* home */
 .home-section {
   background-image: url(../images/KeyVisual.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* parallax on desktop */
+  background-attachment: fixed;
+  /* parallax on desktop */
   padding: 0 80px;
   min-height: 100vh;
   position: relative;
@@ -41,15 +43,31 @@ h1 {
   left: 8rem;
   z-index: 2;
   margin: 0;
-  font-size: 3rem;
   color: #fff;
+}
+
+.smdc-desc-hero {
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 20px 0;
+  width: 40%;
+  white-space: pre;
+  /* allows line breaks + wraps text */
+  color: #fff;
+  /* ensure readability */
+  text-align: left;
+  /* ensure it's aligned left */
+  font-size: 1.6rem;
 }
 
 /* kv */
 .kv-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
+  /* full viewport height */
   overflow: hidden;
   padding: 0 0;
 }
@@ -87,14 +105,16 @@ h1 {
 }
 
 /* MAP */
-.map-container{
+.map-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   /* padding: 0 80px; */
 }
+
 .map-info {
   width: 35%;
   height: 100dvh;
@@ -103,23 +123,28 @@ h1 {
   background-color: #1490df;
   position: relative;
   background-image: url(../images/note-white.png);
-  background-size: 1150px auto; /* example width */
+  background-size: 1150px auto;
+  /* example width */
   background-repeat: no-repeat;
-  background-position: right calc(100% - 25px); /* move up 15px from bottom */
+  background-position: right calc(100% - 25px);
+  /* move up 15px from bottom */
 }
 
 .image-map-wrapper {
   width: 65%;
+  height: 100%;
+  position: relative;
 }
 
 .image-map-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cover the container */
+  object-fit: cover;
+  /* cover the container */
   position: top center;
 }
 
-.map-wrapper{
+.map-wrapper {
   position: absolute;
   top: 8rem;
   left: 8rem;
@@ -128,7 +153,7 @@ h1 {
   color: #fff;
 }
 
-.map-wrapper h2{
+.map-wrapper h2 {
   width: 80%;
   font-weight: 500;
   letter-spacing: 2px;
@@ -136,19 +161,20 @@ h1 {
 
 /* sdp */
 .sdp-section {
-  background-image: 
-    linear-gradient(to right, rgba(0,0,0) 0%, rgba(0,0,0,0) 80%), 
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%),
     url(../images/sdp.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* parallax on desktop */
+  background-attachment: fixed;
+  /* parallax on desktop */
   min-height: 100vh;
   position: relative;
   padding: 0;
 }
 
-.title-wrapper{
+.title-wrapper {
   position: absolute;
   top: 8rem;
   left: 8rem;
@@ -157,79 +183,189 @@ h1 {
   color: #fff;
 }
 
-.sdp-title{
-  font-size: 3rem;
+.sdp-title {
   color: #fff;
   margin-bottom: 2rem;
 }
 
-.title-wrapper p{
-    font-size: 1.4rem;
-    line-height: 1.6;
-    width: 55%;
+.title-wrapper p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
 }
 
 /* about smdc */
-.smdc-section{
+.smdc-section {
   background-image: url(../images/AboutSMDC.jpg);
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* parallax on desktop */
+  background-attachment: fixed;
+  /* parallax on desktop */
   min-height: 100vh;
   position: relative;
   padding: 0;
 }
 
-.smdc-wrapper{
+.smdc-wrapper {
   position: absolute;
   top: 8rem;
   left: 8rem;
   z-index: 2;
   margin: 0;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.smdc-wrapper a{
+.smdc-wrapper a {
   text-decoration: none;
   color: #fff;
 }
 
-.smdc-wrapper a:hover{
+.smdc-wrapper a:hover {
   color: #f0cb51;
 }
 
 .smdc-desc {
   width: 40%;
-  white-space: pre; /* allows line breaks + wraps text */
-  color: #fff; /* ensure readability */
-  text-align: left; /* ensure it's aligned left */
+  white-space: normal;
+  /* allows line breaks + wraps text */
+  color: #fff;
+  /* ensure readability */
+  text-align: left;
+  /* ensure it's aligned left */
+  font-size: 1.2rem;
 }
 
 .smdc-desc {
-  font-size: 1.4rem;
   line-height: 1.6;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+  h1{
+    font-size: 2rem;
+  }
   .home-section {
     background-position: right center;
   }
+
   .home-title {
-    top: 12rem;
-    left: 2rem;
-    font-size: 3rem;
+    top: 10rem;
+    left: 4rem;
+    text-align: center;
   }
+
+  .smdc-desc-hero {
+    position: absolute;
+    top: 13rem;
+    left: 4rem;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .smdc-desc{
+    width: 100%;
+    white-space: normal;
+  }
+
   .video-overlay-text {
     top: 15%;
     left: 5%;
     font-size: 1.5rem;
     max-width: 90%;
   }
+
   .image-map-wrapper {
     width: 100%;
-    height: 40vh; /* or adjust as needed */
+    height: 40vh;
+    /* or adjust as needed */
+  }
+
+
+  .map-container {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0;
+    color: #fff;
+    padding: 4rem;
+  }
+
+  .sdp-title {
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .title-wrapper p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 28%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .map-info {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px;
+    background-size: contain;
+    background-position: center bottom;
+    text-align: center;
+  }
+
+  .image-map-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-map-wrapper img {
+    height: 100%;
+  }
+
+  .map-wrapper {
+    position: static;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .map-wrapper h2 {
+    width: 100%;
+  }
+
+  .amenities-info {
+    width: 100%;
+  }
+
+  .smdc-wrapper {
+    position: static;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .smdc-desc {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .smdc-section {
+    background-attachment: scroll; /* better performance on mobile */
   }
 }
 
@@ -240,6 +376,7 @@ h1 {
     left: 1rem;
     font-size: 1.5rem;
   }
+
   .video-overlay-text {
     top: 10%;
     left: 5%;
@@ -248,6 +385,7 @@ h1 {
   }
 
   .image-map-wrapper {
-    height: 30vh; /* smaller height on mobile */
+    height: 30vh;
+    /* smaller height on mobile */
   }
 }

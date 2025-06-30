@@ -77,45 +77,18 @@ h1 {
 .kv-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  height: 0;
   overflow: hidden;
-  padding: 0;
-  background-color: #000; /* fallback background for letterboxing */
+  background-color: #000;
 }
-
 .kv-section video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.kv-section::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
-.video-overlay-text {
-  position: absolute;
-  z-index: 2;
-  color: #fff;
-  top: 20%;
-  left: 10%;
-  font-size: 2rem;
-  max-width: 80%;
-  line-height: 1.2;
-  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* MAP */
@@ -394,28 +367,9 @@ h1 {
     background-attachment: scroll; /* better performance on mobile */
   }
 
-  .kv-section{
-    position: static;
-    height: 100%;
+ .kv-section {
+    padding-bottom: 75%; /* taller aspect ratio for mobile */
   }
-
-  .kv-section video{
-    height: auto;
-    position: static;
-    top: 0;
-    bottom: 0;
-    transform: none;
-  }
-
-  .kv-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: none;
-}
   
 }
 
@@ -436,20 +390,10 @@ h1 {
   width: 100%;
   }
 
-  .video-overlay-text {
-    top: 10%;
-    left: 5%;
-    font-size: 1.2rem;
-    max-width: 95%;
-  }
 
   .image-map-wrapper {
     height: 30vh;
     /* smaller height on mobile */
   }
-  .video-overlay-text {
-    font-size: 1.2rem;
-    top: 10%;
-    left: 5%;
-  }
+ 
 }

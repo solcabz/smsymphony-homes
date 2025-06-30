@@ -266,6 +266,10 @@ h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  
+  .smdc-section{
+    height: 100%;
+  }
 
   h1{
     font-size: 2rem;

@@ -24,17 +24,18 @@
     font-size: 3rem;
     margin-bottom: 2rem;
     color: #203d83;
+    font-weight: 600;
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6;
 }
 
 .about-image {
     width: 60%;
     overflow: hidden;
-    position: relative;
+    position: right center;
 }
 
 .about-image img {

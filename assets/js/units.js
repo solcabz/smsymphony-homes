@@ -30,11 +30,11 @@ function initCarousel(id) {
         updateCarousel();
     }
 
-    let slideInterval = setInterval(nextSlide, 3000);
+    let slideInterval = setInterval(nextSlide, 5000);
 
     function resetAutoSlide() {
         clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, 3000);
+        slideInterval = setInterval(nextSlide, 5000);
     }
 
     updateCarousel();

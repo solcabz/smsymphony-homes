@@ -92,6 +92,9 @@
 
 
 @media (max-width: 768px) {
+    .social-wrapper a img{
+      width: 30px;
+    }
     .footer-section{
         height: 100%;
     }
@@ -99,6 +102,10 @@
     .footer-wrapper{
         justify-content: center;
         padding: 30px 0;
+    }
+
+    .footer-wrapper img{
+      width: 300px;
     }
 
     .footer-section{

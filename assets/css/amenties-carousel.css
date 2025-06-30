@@ -104,6 +104,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .amenities-section{
+    height: 100%;
+  }
+
   .amenities-wrapper {
     flex-direction: column;
   }

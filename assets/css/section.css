@@ -257,8 +257,10 @@ h1 {
   }
 
   .home-title h1{
+    font-size: 2rem;
     text-align: center;
   }
+  
   .home-title p{
     text-align: center;
     padding: 10px;

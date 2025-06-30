@@ -27,7 +27,6 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   
-  
   .map-container {
     height: 100%;
     flex-direction: column;
@@ -51,14 +50,24 @@
 
   .map-wrapper {
     position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2rem 0;
     text-align: center;
     height: 100%;
   }
 
+  .map-wrapper h1{
+    width: 100%;
+    text-align: center;
+  }
+
   .map-wrapper h2 {
     width: 100%;
   }
+
+  
 
   
 } 

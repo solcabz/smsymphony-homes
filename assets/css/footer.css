@@ -35,11 +35,19 @@
   font-size: 1.2rem;
 }
 
+.feet-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+}
+
 .social-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 1.2rem;
   font-size: 1.2rem;
 }
 

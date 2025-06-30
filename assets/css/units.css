@@ -127,10 +127,17 @@
 @media (max-width: 768px) {
     .units-flex-container {
         flex-direction: column;
+        border-radius: 16px;
     }
+
+    .units-carousel-images {
+        border-radius: 16px;
+    }
+
 
     .units-carousel-images img {
         height: 300px;
+        border-radius: 16px;
     }
 
     .units-title-wrapper {

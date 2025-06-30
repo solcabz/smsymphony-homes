@@ -67,7 +67,7 @@
 }
 
 .c {
-  white-space: pre;
+  width: 350px;
 }
 
 .c span {
@@ -115,5 +115,12 @@
 
     .contact-wrapper, .lts{
         flex-direction: column;
+        gap: 1rem;
+    }
+
+    .c{
+      font-size: 1rem;
+      width: 100%;
+      text-align: left;
     }
 }

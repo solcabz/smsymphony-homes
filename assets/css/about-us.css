@@ -5,9 +5,11 @@
 
 .about-content {
     display: flex;
-    flex-wrap: wrap; /* allows content to wrap on small screens */
+    flex-wrap: wrap;
+    /* allows content to wrap on small screens */
     width: 100%;
-    min-height: 100vh; /* use min-height for flexibility */
+    min-height: 100vh;
+    /* use min-height for flexibility */
     color: #203d83;
 }
 
@@ -49,11 +51,11 @@
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
 
-    .about-us-container{
+    .about-us-container {
         height: 100%;
     }
 
-    .about-content{
+    .about-content {
         height: 100%;
     }
 
@@ -100,5 +102,5 @@
         font-size: 1rem;
     }
 
-    
+
 }

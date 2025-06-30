@@ -2,7 +2,8 @@
   padding: 20px 80px;
   background-color: #1490df;
   background-image: url(../images/note-white.png);
-  background-size: 850px auto; /* example width */
+  background-size: 850px auto;
+  /* example width */
   background-repeat: no-repeat;
   background-position: left 0 top 10rem;
 }
@@ -35,7 +36,7 @@
   font-size: 1.2rem;
 }
 
-.feet-container{
+.feet-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,13 +73,16 @@
 
 .c span {
   font-weight: 600;
-  display: inline-block; /* allows margin to apply while still inline with text */
-  margin-bottom: 0.5rem; /* adjust value as needed */
+  display: inline-block;
+  /* allows margin to apply while still inline with text */
+  margin-bottom: 0.5rem;
+  /* adjust value as needed */
 }
 
 .copyright {
   text-align: center;
 }
+
 .copyright a {
   text-decoration: none;
   color: #ffffff;
@@ -92,35 +96,37 @@
 
 
 @media (max-width: 768px) {
-    .social-wrapper a img{
-      width: 30px;
-    }
-    .footer-section{
-        height: 100%;
-    }
+  .social-wrapper a img {
+    width: 30px;
+  }
 
-    .footer-wrapper{
-        justify-content: center;
-        padding: 30px 0;
-    }
+  .footer-section {
+    height: 100%;
+  }
 
-    .footer-wrapper img{
-      width: 300px;
-    }
+  .footer-wrapper {
+    justify-content: center;
+    padding: 30px 0;
+  }
 
-    .footer-section{
-       background-image: none;
-    }
-    
+  .footer-wrapper img {
+    width: 300px;
+  }
 
-    .contact-wrapper, .lts{
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .footer-section {
+    background-image: none;
+  }
 
-    .c{
-      font-size: 1rem;
-      width: 100%;
-      text-align: left;
-    }
+
+  .contact-wrapper,
+  .lts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .c {
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+  }
 }

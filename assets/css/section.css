@@ -38,7 +38,7 @@ h1 {
   z-index: 1;
 }
 
-.home-title{
+.home-title {
   position: absolute;
   top: 8rem;
   left: 8rem;
@@ -48,11 +48,11 @@ h1 {
 }
 
 
-.home-title h1{
+.home-title h1 {
   font-size: 4rem;
 }
 
-.home-title p{
+.home-title p {
   font-size: 1.4rem;
   width: 680px;
 }
@@ -77,11 +77,13 @@ h1 {
 .kv-section {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio (h/w) */
   height: 0;
   overflow: hidden;
   background-color: #000;
 }
+
 .kv-section video {
   position: absolute;
   top: 0;
@@ -148,13 +150,13 @@ h1 {
   top: 8rem;
   left: 8rem;
   z-index: 2;
-    margin: 0;
-    color: #fff;
+  margin: 0;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height:50%;
+  height: 50%;
   gap: 2rem;
 }
 
@@ -242,29 +244,30 @@ h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  
-  .smdc-section{
+
+  .smdc-section {
     height: 100%;
     padding-bottom: 1rem;
   }
 
-  h1{
+  h1 {
     font-size: 2rem;
   }
-  
+
   .home-section {
     background-position: right center;
   }
 
-  .home-title h1{
+  .home-title h1 {
     font-size: 2rem;
     text-align: center;
   }
-  
-  .home-title p{
+
+  .home-title p {
     text-align: center;
     padding: 10px;
   }
+
   .smdc-desc-hero {
     position: absolute;
     top: 13rem;
@@ -284,7 +287,7 @@ h1 {
     padding: 0 30px;
   }
 
-  .smdc-wrapper{
+  .smdc-wrapper {
     width: 100%;
   }
 
@@ -293,7 +296,8 @@ h1 {
     left: 5%;
     font-size: 1.5rem;
     max-width: 90%;
-  } 
+  }
+
   .smdc-wrapper {
     padding: 0;
   }
@@ -327,13 +331,15 @@ h1 {
   }
 
   .smdc-section {
-    background-attachment: scroll; /* better performance on mobile */
+    background-attachment: scroll;
+    /* better performance on mobile */
   }
 
- .kv-section {
-    padding-bottom: 75%; /* taller aspect ratio for mobile */
+  .kv-section {
+    padding-bottom: 75%;
+    /* taller aspect ratio for mobile */
   }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -344,18 +350,18 @@ h1 {
     width: 100%;
   }
 
-  .home-title h1{
-  font-size: 2rem;
+  .home-title h1 {
+    font-size: 2rem;
   }
 
-   .home-title p{
-  font-size: 1rem;
-  width: 100%;
+  .home-title p {
+    font-size: 1rem;
+    width: 100%;
   }
 
   .image-map-wrapper {
     height: 30vh;
     /* smaller height on mobile */
   }
- 
+
 }

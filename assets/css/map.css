@@ -1,32 +1,35 @@
 .image-map-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .pin {
-    position: absolute;
-    top: 49%; /* adjust this to move the pin vertically */
-    left: 59%; /* adjust this to move the pin horizontally */
-    transform: translate(-50%, -100%); /* align bottom center of pin */
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 49%;
+  /* adjust this to move the pin vertically */
+  left: 59%;
+  /* adjust this to move the pin horizontally */
+  transform: translate(-50%, -100%);
+  /* align bottom center of pin */
+  cursor: pointer;
+  z-index: 10;
 }
 
 .pin-image {
-    width: 8rem !important;
-    height: auto !important;
-    pointer-events: auto;
+  width: 8rem !important;
+  height: auto !important;
+  pointer-events: auto;
 }
 
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  
+
   .map-container {
     height: 100%;
     flex-direction: column;
@@ -58,7 +61,7 @@
     height: 100%;
   }
 
-  .map-wrapper h1{
+  .map-wrapper h1 {
     width: 100%;
     text-align: center;
   }
@@ -67,7 +70,7 @@
     width: 100%;
   }
 
-  
 
-  
-} 
+
+
+}

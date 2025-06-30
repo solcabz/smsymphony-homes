@@ -22,3 +22,43 @@
     height: auto !important;
     pointer-events: auto;
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+  
+  .map-container {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .map-info {
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-image: none;
+  }
+
+  .image-map-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-map-wrapper img {
+    height: 100%;
+  }
+
+  .map-wrapper {
+    position: static;
+    margin: 2rem 0;
+    text-align: center;
+    height: 100%;
+  }
+
+  .map-wrapper h2 {
+    width: 100%;
+  }
+
+  
+} 

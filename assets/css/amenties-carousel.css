@@ -30,7 +30,7 @@
 }
 .amenities-info h1{
     line-height: 3.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .amenities-info p {
   font-size: 1rem;
@@ -103,4 +103,15 @@
      background: rgba(0, 0, 0, 0.9);
  }
 
- 
+ /* Responsive adjustments */
+@media (max-width: 768px) {
+  .amenities-info h1{
+    font-size: 2rem;
+    width: 420px;
+  }
+
+  .amenities-info li {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+}

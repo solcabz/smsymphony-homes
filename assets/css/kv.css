@@ -1,0 +1,35 @@
+/* kv */
+.kv-section {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio (h/w) */
+  height: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.kv-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .kv-section {
+    padding-bottom: 75%;
+    /* taller aspect ratio for mobile */
+  }
+
+   .video-overlay-text {
+    top: 15%;
+    left: 5%;
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+
+}

@@ -43,55 +43,55 @@ document.getElementById("backToTop").addEventListener("click", function () {
 });
 
 const slides = document.querySelectorAll('.slide');
-  const indicatorsContainer = document.getElementById('carousel-indicators');
-  const amenityItems = document.querySelectorAll('.amenities-info li');
-  let currentIndex = 0;
+const indicatorsContainer = document.getElementById('carousel-indicators');
+const amenityItems = document.querySelectorAll('.amenities-info li');
+let currentIndex = 0;
 
-  // Create indicator dots
-  slides.forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.addEventListener('click', () => {
-      showSlide(index);
-    });
-    indicatorsContainer.appendChild(dot);
+// Create indicator dots
+slides.forEach((_, index) => {
+  const dot = document.createElement('button');
+  dot.addEventListener('click', () => {
+    showSlide(index);
+  });
+  indicatorsContainer.appendChild(dot);
+});
+
+const indicators = indicatorsContainer.querySelectorAll('button');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    indicators[i].classList.toggle('active', i === index);
   });
 
-  const indicators = indicatorsContainer.querySelectorAll('button');
+  // Highlight matching amenity
+  const activeAmenity = slides[index].dataset.amenity;
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-      indicators[i].classList.toggle('active', i === index);
-    });
-
-    // Highlight matching amenity
-    const activeAmenity = slides[index].dataset.amenity;
-
-    amenityItems.forEach(item => {
-      const match = item.dataset.amenity === activeAmenity;
-      item.classList.toggle('active', match);
-    });
-
-    currentIndex = index;
-  }
-
-  // Make text list clickable
   amenityItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const clickedAmenity = item.dataset.amenity;
-
-      const targetIndex = [...slides].findIndex(
-        slide => slide.dataset.amenity === clickedAmenity
-      );
-
-      if (targetIndex !== -1) {
-        showSlide(targetIndex);
-      }
-    });
+    const match = item.dataset.amenity === activeAmenity;
+    item.classList.toggle('active', match);
   });
 
-  // Initial setup
-  showSlide(currentIndex);
+  currentIndex = index;
+}
+
+// Make text list clickable
+amenityItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const clickedAmenity = item.dataset.amenity;
+
+    const targetIndex = [...slides].findIndex(
+      slide => slide.dataset.amenity === clickedAmenity
+    );
+
+    if (targetIndex !== -1) {
+      showSlide(targetIndex);
+    }
+  });
+});
+
+// Initial setup
+showSlide(currentIndex);
 
 
 // const slides = document.querySelectorAll('.slide');
@@ -122,20 +122,20 @@ const slides = document.querySelectorAll('.slide');
 // }, 5000); // 5 seconds
 
 document.addEventListener('DOMContentLoaded', function () {
-    const titles = document.querySelectorAll('.animated-title');
+  const elements = document.querySelectorAll('.animated-title, .animated-paragraph');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // animate only once
-        }
-      });
-    }, {
-      threshold: 0.1
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // animate only once
+      }
     });
-
-    titles.forEach(title => {
-      observer.observe(title);
-    });
+  }, {
+    threshold: 0.1
   });
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+});

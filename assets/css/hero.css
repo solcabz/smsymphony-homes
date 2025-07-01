@@ -87,3 +87,21 @@
     width: 100%;
   }
 }
+
+
+@media (max-width: 480px) {
+  .home-title {
+    top: 8rem;
+    left: 0;
+    text-align: left;
+  }
+
+  .home-title h1 {
+    font-size: 2rem;
+  }
+
+  .home-title p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

@@ -124,7 +124,7 @@
 }
 
 /* Tablet and below */
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .units-flex-container {
         flex-direction: column;
         border-radius: 16px;

@@ -68,31 +68,31 @@ h1 {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
 
   .smdc-section {
     height: 100%;
-    padding-bottom: 1rem;
+     background-position: right center;
+     text-align: center;
+     padding-top: 2rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-
- 
 
   .smdc-desc-hero {
     position: absolute;
     top: 13rem;
     left: 4rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 0;
   }
 
   .smdc-desc {
     width: 100%;
     padding: 0 30px;
-    font-size: 1rem;
+    font-size: rem;
   }
 
   .learn-more {
@@ -115,5 +115,15 @@ h1 {
   .smdc-section {
     background-attachment: scroll;
     /* better performance on mobile */
+  }
+}
+
+@media (max-width: 728px) {
+   h1 {
+    font-size: 2rem;
+  }
+
+   .smdc-desc-hero {
+    font-size: 1rem;
   }
 }

@@ -28,7 +28,7 @@
 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
 
   .map-container {
     height: 100%;

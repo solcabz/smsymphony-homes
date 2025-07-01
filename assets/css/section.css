@@ -79,6 +79,8 @@ h1 {
     font-size: 2rem;
   }
 
+ 
+
   .smdc-desc-hero {
     position: absolute;
     top: 13rem;
@@ -115,4 +117,3 @@ h1 {
     /* better performance on mobile */
   }
 }
-

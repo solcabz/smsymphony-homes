@@ -72,12 +72,12 @@
   }
 
   .home-title {
-    top: 6rem;
-    left: 1rem;
-    right: 1rem;
-    text-align: left;
+    top: 12rem;
+    left: 0;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    width: 100%;
   }
-
   .home-title h1 {
     font-size: 2rem;
   }
@@ -88,12 +88,10 @@
   }
 }
 
-
 @media (max-width: 480px) {
   .home-title {
     top: 8rem;
     left: 0;
-    text-align: left;
   }
 
   .home-title h1 {

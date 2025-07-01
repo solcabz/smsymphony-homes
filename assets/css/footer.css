@@ -110,8 +110,8 @@
     padding: 30px 0;
   }
 
-  .footer-wrapper img {
-    width: 200px;
+  .symphony-image{
+    width: 280px;
   }
 
   .footer-section {
@@ -137,7 +137,7 @@
   }
 
   .c {
-    font-size: 1rem;
+    font-size: 0.9rem;
     width: 80%;
     text-align: left;
     margin-bottom: 20px;
@@ -150,4 +150,8 @@
   .copyright {
     font-size: 1rem;
   }
+
+  .lts-img {
+    width: 250px !important;
+}
 }

@@ -5,13 +5,10 @@
 }
 
 .amenities-info {
-  background: rgba(91, 140, 231, 0.85);
-  background-image: url(../images/note-white.png);
-  background-repeat: no-repeat;
-  background-position: right 0 bottom 1rem;
-  background-size: 550px;
+  position: relative; /* Required for pseudo-element positioning */
+  background: rgba(91, 140, 231, 0.85); /* background color */
   color: #ffffff;
-  padding: 1.5rem 80px 1.5rem 80px;
+  padding: 1.5rem 80px;
   width: 700px;
   height: 100dvh;
   z-index: 2;
@@ -20,6 +17,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden; /* Prevent pseudo-element overflow */
+}
+
+/* Pseudo-element for background image with opacity */
+.amenities-info::before {
+  content: "";
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  width: 550px;
+  height: 550px;
+  background: url(../images/note-white.png) no-repeat bottom right;
+  background-size: contain;
+  opacity: 0.25; /* <-- control image opacity here */
+  z-index: -1;
+  pointer-events: none;
 }
 
 .amenities-info h1 {
@@ -88,7 +101,7 @@
 }
 
 .arrow {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.329);
   color: white;
   border: none;
   font-size: 1.5rem;
@@ -99,7 +112,7 @@
 }
 
 .arrow:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(91, 140, 231, 0.9);
 }
 
 /* Responsive */
@@ -142,4 +155,13 @@
   .controls {
     bottom: 10px;
   }
+
+}
+
+/* Responsive */
+@media (max-width: 728px) {
+/* Pseudo-element for background image with opacity */
+.amenities-info::before {
+  width: 250px;
+}
 }

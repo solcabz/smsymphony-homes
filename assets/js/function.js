@@ -75,6 +75,21 @@ const slides = document.querySelectorAll('.slide');
     currentIndex = index;
   }
 
+  // Make text list clickable
+  amenityItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const clickedAmenity = item.dataset.amenity;
+
+      const targetIndex = [...slides].findIndex(
+        slide => slide.dataset.amenity === clickedAmenity
+      );
+
+      if (targetIndex !== -1) {
+        showSlide(targetIndex);
+      }
+    });
+  });
+
   // Initial setup
   showSlide(currentIndex);
 
@@ -105,3 +120,22 @@ const slides = document.querySelectorAll('.slide');
 //   currentIndex = (currentIndex + 1) % totalSlides;
 //   showSlide(currentIndex);
 // }, 5000); // 5 seconds
+
+document.addEventListener('DOMContentLoaded', function () {
+    const titles = document.querySelectorAll('.animated-title');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    titles.forEach(title => {
+      observer.observe(title);
+    });
+  });

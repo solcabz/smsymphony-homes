@@ -172,6 +172,12 @@
   padding: 3rem 1.5rem;
 }
 
+.view-map{
+  /* adjust this to move the pin vertically */
+  right: 6%;
+  font-size: 16px;
+}
+
 .pin-image {
   width: 4rem !important;
 }

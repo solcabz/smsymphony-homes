@@ -46,10 +46,14 @@
 
 /* Tablet */
 @media (max-width: 1023px) {
+
+    .sdp-section{
+        height: 100%;
+    }
     .sdp-container {
         height: 100%;
     }
-    
+
     .sdp-title {
         font-size: 3rem;
     }

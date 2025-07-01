@@ -126,4 +126,7 @@ h1 {
    .smdc-desc-hero {
     font-size: 1rem;
   }
+  .smdc-wrapper {
+    padding-bottom: 2.5rem;
+  }
 }

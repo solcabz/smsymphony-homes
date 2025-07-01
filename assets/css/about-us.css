@@ -52,6 +52,9 @@
 /* 🔶 Tablet: 768px–1023px */
 /* ---------------------- */
 @media (max-width: 1023px) {
+  .about-us-container{
+    height: 100%;
+  }
 
   .about-content{
     height: 100%;
@@ -81,7 +84,6 @@
   .about-image img {
     -webkit-mask-image: none;
     mask-image: none;
-    object-fit: contain;
   }
 }
 

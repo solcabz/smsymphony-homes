@@ -42,32 +42,66 @@ document.getElementById("backToTop").addEventListener("click", function () {
   });
 });
 
-
 const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-let currentIndex = 0;
+  const indicatorsContainer = document.getElementById('carousel-indicators');
+  const amenityItems = document.querySelectorAll('.amenities-info li');
+  let currentIndex = 0;
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) slide.classList.add('active');
+  // Create indicator dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.addEventListener('click', () => {
+      showSlide(index);
+    });
+    indicatorsContainer.appendChild(dot);
   });
-}
 
-document.getElementById('next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  showSlide(currentIndex);
-});
+  const indicators = indicatorsContainer.querySelectorAll('button');
 
-document.getElementById('prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      indicators[i].classList.toggle('active', i === index);
+    });
+
+    // Highlight matching amenity
+    const activeAmenity = slides[index].dataset.amenity;
+
+    amenityItems.forEach(item => {
+      const match = item.dataset.amenity === activeAmenity;
+      item.classList.toggle('active', match);
+    });
+
+    currentIndex = index;
+  }
+
+  // Initial setup
   showSlide(currentIndex);
-});
+
+
+// const slides = document.querySelectorAll('.slide');
+// const totalSlides = slides.length;
+// let currentIndex = 0;
+
+// function showSlide(index) {
+//   slides.forEach((slide, i) => {
+//     slide.classList.remove('active');
+//     if (i === index) slide.classList.add('active');
+//   });
+// }
+
+// document.getElementById('next').addEventListener('click', () => {
+//   currentIndex = (currentIndex + 1) % totalSlides;
+//   showSlide(currentIndex);
+// });
+
+// document.getElementById('prev').addEventListener('click', () => {
+//   currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+//   showSlide(currentIndex);
+// });
 
 // Optional: Autoplay
 // setInterval(() => {
 //   currentIndex = (currentIndex + 1) % totalSlides;
 //   showSlide(currentIndex);
 // }, 5000); // 5 seconds
-
-

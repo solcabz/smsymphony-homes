@@ -239,49 +239,46 @@
             <div class="amenities-info">
                 <h1>Live, Play, Repeat it’s your rhythm.</h1>
                 <ul>
-                    <li>Main Entrance</li>
-                    <li>Clubhouse</li>
-                    <li>Lap Pool</li>
-                    <li>Kids Pool</li>
-                    <li>Toddler Center</li>
-                    <li>Gym</li>
-                    <li>Function Hall</li>
-                    <li>Game Room</li>
-                    <li>Co-working Spaces</li>
-                    <li>Playground</li>
-                    <li>Grand Lawn</li>
-                    <li>Exercise Lawn</li>
-                    <li>Paw Park</li>
-                    <li>Community Sports Court</li>
+                    <li data-amenity="Main Entrance">Main Entrance</li>
+                    <li data-amenity="Clubhouse">Clubhouse</li>
+                    <li data-amenity="LapPool">Lap Pool</li>
+                    <li data-amenity="KiddiePool">Kids Pool</li>
+                    <li data-amenity="ToddlerCenter">Toddler Center</li>
+                    <li data-amenity="Gym">Gym</li>
+                    <li data-amenity="FunctionRoom">Function Hall</li>
+                    <li data-amenity="GameRoom">Game Room</li>
+                    <li data-amenity="CoWorkingSpace">Co-working Spaces</li>
+                    <li data-amenity="PlayGround">Playground</li>
+                    <li data-amenity="Grand Lawn">Grand Lawn</li>
+                    <li data-amenity="Exercise Lawn">Exercise Lawn</li>
+                    <li data-amenity="Paw Park">Paw Park</li>
+                    <li data-amenity="Basketball">Community Sports Court</li>
                 </ul>
             </div>
 
             <div class="carousel-wrapper">
                 <div class="carousel" id="carousel">
-                    <div class="slide active"><img src="./assets/images/Amenities/LapPool.jpg" alt="lap-pool" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/KiddiePool.png" alt="kiddie-pool" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/Clubhouse.jpg" alt="clubhouse" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/Park01.jpg" alt="park1" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/Park02.png" alt="park2" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/PlayGround.jpg" alt="play-ground" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/PetGroove.jpg" alt="pet-groove" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/GuardHouse.jpg" alt="guard-house" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/AmenityLounge.jpg" alt="amenity-lounge" />
-                    </div>
-                    <div class="slide"><img src="./assets/images/Amenities/FunctionRoom.jpg" alt="function-room" />
-                    </div>
-                    <div class="slide"><img src="./assets/images/Amenities/CoWorkingSpace.png"
-                            alt="co-workling-space" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/GameRoom.png" alt="gameroom" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/Gym.jpg" alt="gtm3" /></div>
-                    <div class="slide"><img src="./assets/images/Amenities/ToddlerCenter.jpg" alt="toddler-center" />
-                    </div>
-                    <div class="slide"><img src="./assets/images/Amenities/Basketball.png" alt="basketball" /></div>
+                    <div class="slide active" data-amenity="LapPool"><img src="./assets/images/Amenities/LapPool.jpg" alt="lap-pool" /></div>
+                    <div class="slide" data-amenity="KiddiePool"><img src="./assets/images/Amenities/KiddiePool.png" alt="kiddie-pool" /></div>
+                    <div class="slide" data-amenity="Clubhouse"><img src="./assets/images/Amenities/Clubhouse.jpg" alt="clubhouse" /></div>
+                    <!-- <div class="slide" data-amenity=""><img src="./assets/images/Amenities/Park01.jpg" alt="park1" /></div> -->
+                    <!-- <div class="slide" data-amenity=""><img src="./assets/images/Amenities/Park02.png" alt="park2" /></div> -->
+                    <div class="slide" data-amenity="PlayGround"><img src="./assets/images/Amenities/PlayGround.jpg" alt="play-ground" /></div>
+                    <div class="slide" data-amenity="Paw Park"><img src="./assets/images/Amenities/PetGroove.jpg" alt="pet-groove" /></div>
+                    <!-- <div class="slide" data-amenity=""><img src="./assets/images/Amenities/GuardHouse.jpg" alt="guard-house" /></div> -->
+                    <div class="slide" data-amenity="Main Entrance"><img src="./assets/images/Amenities/AmenityLounge.jpg" alt="amenity-lounge" /></div>
+                    <div class="slide" data-amenity="FunctionRoom"><img src="./assets/images/Amenities/FunctionRoom.jpg" alt="function-room" /></div>
+                    <div class="slide" data-amenity="CoWorkingSpace"><img src="./assets/images/Amenities/CoWorkingSpace.png" alt="co-workling-space" /></div>
+                    <div class="slide" data-amenity="GameRoom"><img src="./assets/images/Amenities/GameRoom.png" alt="gameroom" /></div>
+                    <div class="slide" data-amenity="Gym"><img src="./assets/images/Amenities/Gym.jpg" alt="gtm3" /></div>
+                    <div class="slide" data-amenity="ToddlerCenter"><img src="./assets/images/Amenities/ToddlerCenter.jpg" alt="toddler-center" /></div>
+                    <div class="slide" data-amenity="Basketball"><img src="./assets/images/Amenities/Basketball.png" alt="basketball" /></div>
                 </div>
-                <div class="controls">
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+                <!-- <div class="controls">
                     <button class="arrow" id="prev">&#10094;</button>
                     <button class="arrow" id="next">&#10095;</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -305,13 +302,14 @@
                     focus on efficient land use, green spaces, and energy-efficient building
                     practices—shaping communities and building the good life.
                 </p>
+                <br>
                 <p class="learn-more">
                     Learn more at
                     <a href="https://www.smdc.com" target="_blank" rel="noopener noreferrer">www.smdc.com</a>
                 </p>
             </div>
             <div class="about-image smdc-image">
-                <img src="./assets/images/AboutSMDC.jpg" alt="Family Image" />
+                <img src="./assets/images/AboutSMDC.png" alt="Family Image" />
             </div>
         </div>
     </section>

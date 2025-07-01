@@ -5,8 +5,10 @@
 }
 
 .amenities-info {
-  position: relative; /* Required for pseudo-element positioning */
-  background: rgba(91, 140, 231, 0.85); /* background color */
+  position: relative;
+  /* Required for pseudo-element positioning */
+  background: #1490df;
+  /* background color */
   color: #ffffff;
   padding: 1.5rem 80px;
   width: 700px;
@@ -16,7 +18,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  overflow: hidden; /* Prevent pseudo-element overflow */
+  overflow: hidden;
+  /* Prevent pseudo-element overflow */
 }
 
 /* Pseudo-element for background image with opacity */
@@ -29,7 +32,8 @@
   height: 550px;
   background: url(../images/note-white.png) no-repeat bottom right;
   background-size: contain;
-  opacity: 0.25; /* <-- control image opacity here */
+  opacity: 0.25;
+  /* <-- control image opacity here */
   z-index: -1;
   pointer-events: none;
 }
@@ -114,6 +118,35 @@
   background: rgba(91, 140, 231, 0.9);
 }
 
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background: #ffc70e;
+}
+
+.amenities-info li.active {
+  color: #ffc70e;
+  font-weight: bold;
+}
+
 /* Responsive */
 @media (max-width: 1028px) {
 
@@ -159,8 +192,9 @@
 
 /* Responsive */
 @media (max-width: 728px) {
-/* Pseudo-element for background image with opacity */
-.amenities-info::before {
-  width: 250px;
-}
+
+  /* Pseudo-element for background image with opacity */
+  .amenities-info::before {
+    width: 250px;
+  }
 }

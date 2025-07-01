@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   color: #203d83;
 }
 
@@ -52,6 +52,10 @@
 /* 🔶 Tablet: 768px–1023px */
 /* ---------------------- */
 @media (max-width: 1023px) {
+
+  .about-content{
+    height: 100%;
+  }
   .about-text {
     width: 100%;
     padding: 4rem 2rem;
@@ -77,6 +81,7 @@
   .about-image img {
     -webkit-mask-image: none;
     mask-image: none;
+    object-fit: contain;
   }
 }
 

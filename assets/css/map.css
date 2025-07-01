@@ -153,6 +153,10 @@
   padding: 3rem 1.5rem;
 }
 
+.pin-image {
+  width: 4rem !important;
+}
+
 .map-info li {
   font-size: 1.2rem;
 }

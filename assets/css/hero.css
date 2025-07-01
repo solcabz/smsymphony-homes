@@ -1,7 +1,7 @@
 .home-section {
   background-image: url(../images/KeyVisual.jpg);
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* parallax for desktop */
   padding: 0 80px;
@@ -48,7 +48,7 @@
   }
 
   .home-title {
-    top: 5rem;
+    top: 6rem;
     left: 2rem;
   }
 
@@ -72,7 +72,7 @@
   }
 
   .home-title {
-    top: 3rem;
+    top: 6rem;
     left: 1rem;
     right: 1rem;
     text-align: left;

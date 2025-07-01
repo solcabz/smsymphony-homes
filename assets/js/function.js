@@ -11,11 +11,18 @@ window.addEventListener('scroll', function () {
 // Mobile toggle
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
+const menuItems = document.querySelectorAll('#nav-links .menu-item a');
 
 menuToggle.addEventListener('click', function () {
   navLinks.classList.toggle('active');
 });
 
+// Close menu on link click
+menuItems.forEach(link => {
+  link.addEventListener('click', function () {
+    navLinks.classList.remove('active');
+  });
+});
 
 // Show/hide button based on scroll position
 window.onscroll = function () {

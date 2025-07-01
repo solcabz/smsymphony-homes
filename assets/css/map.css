@@ -95,7 +95,23 @@
   height: auto !important;
   pointer-events: auto;
 }
-
+.view-map{
+  position: absolute;
+  top: 95%;
+  /* adjust this to move the pin vertically */
+  right: 9%;
+  /* adjust this to move the pin horizontally */
+  transform: translate(-50%, -100%);
+  /* align bottom center of pin */
+  cursor: pointer;
+  z-index: 10;
+  background-color: #1490df;
+  color: #fff;
+  border-radius: 16px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
 
 /* Responsive adjustments */
 @media (max-width: 1023px) {

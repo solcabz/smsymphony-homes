@@ -148,7 +148,12 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .map-wrapper p {
+  .map-wrapper{
+  font-size: 1.2rem;
+  padding: 3rem 1.5rem;
+}
+
+.map-info li {
   font-size: 1.2rem;
 }
 }

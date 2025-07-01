@@ -14,50 +14,7 @@ h1 {
 }
 
 
-/* home */
-.home-section {
-  background-image: url(../images/KeyVisual.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* parallax on desktop */
-  padding: 0 80px;
-  min-height: 100vh;
-  position: relative;
-  padding: 0;
-}
-
-.home-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.home-title {
-  position: absolute;
-  top: 8rem;
-  left: 8rem;
-  z-index: 2;
-  margin: 0;
-  color: #fff;
-}
-
-
-.home-title h1 {
-  font-size: 4rem;
-}
-
-.home-title p {
-  font-size: 1.4rem;
-  width: 680px;
-}
-
-.smdc-desc-hero {
+/* .smdc-desc-hero {
   position: absolute;
   top: 12rem;
   left: 8rem;
@@ -65,13 +22,10 @@ h1 {
   margin: 20px 0;
   width: 40%;
   white-space: pre;
-  /* allows line breaks + wraps text */
   color: #fff;
-  /* ensure readability */
   text-align: left;
-  /* ensure it's aligned left */
   font-size: 1.6rem;
-}
+} */
 
 /* kv */
 .kv-section {

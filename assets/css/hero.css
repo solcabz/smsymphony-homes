@@ -1,0 +1,89 @@
+.home-section {
+  background-image: url(../images/KeyVisual.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* parallax for desktop */
+  padding: 0 80px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Title container */
+.home-title {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+}
+
+.home-title h1 {
+  font-size: 4rem;
+}
+
+.home-title p {
+  font-size: 1.4rem;
+  width: 680px;
+}
+
+/* ---------------------- */
+/* 🔶 Tablets: 768px–1023px */
+/* ---------------------- */
+@media (max-width: 1023px) {
+  .home-section {
+    padding: 0 40px;
+    background-attachment: scroll; /* disable parallax */
+  }
+
+  .home-title {
+    top: 5rem;
+    left: 2rem;
+  }
+
+  .home-title h1 {
+    font-size: 3rem;
+  }
+
+  .home-title p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}
+
+/* ---------------------- */
+/* 🔹 Mobile: 0–767px (iOS/Android phones) */
+/* ---------------------- */
+@media (max-width: 767px) {
+  .home-section {
+    padding: 0 20px;
+    background-attachment: scroll; /* disable parallax */
+  }
+
+  .home-title {
+    top: 3rem;
+    left: 1rem;
+    right: 1rem;
+    text-align: left;
+  }
+
+  .home-title h1 {
+    font-size: 2rem;
+  }
+
+  .home-title p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

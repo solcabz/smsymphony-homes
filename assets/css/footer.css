@@ -114,7 +114,7 @@
   }
 
   .symphony-image{
-    width: 100%;
+    width: 250px;
   }
 
   .footer-section {
@@ -155,6 +155,6 @@
   }
 
   .lts-img {
-    width: 250px !important;
+    width: 180px !important;
 }
 }

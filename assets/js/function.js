@@ -41,10 +41,10 @@ document.getElementById("backToTop").addEventListener("click", function () {
     behavior: "smooth"
   });
 });
-
 const slides = document.querySelectorAll('.slide');
 const indicatorsContainer = document.getElementById('carousel-indicators');
 const amenityItems = document.querySelectorAll('.amenities-info li');
+const carousel = document.querySelector('.carousel'); // wrapper for swipe support
 let currentIndex = 0;
 
 // Create indicator dots
@@ -90,8 +90,41 @@ amenityItems.forEach(item => {
   });
 });
 
+// ✅ Swipe Support for Mobile
+let startX = 0;
+let endX = 0;
+
+carousel.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+carousel.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+carousel.addEventListener('touchend', () => {
+  const diffX = endX - startX;
+
+  if (Math.abs(diffX) > 50) {
+    if (diffX < 0) {
+      // Swipe left – next slide
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    } else {
+      // Swipe right – previous slide
+      const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(prevIndex);
+    }
+  }
+
+  // Reset
+  startX = 0;
+  endX = 0;
+});
+
 // Initial setup
 showSlide(currentIndex);
+
 
 
 // const slides = document.querySelectorAll('.slide');

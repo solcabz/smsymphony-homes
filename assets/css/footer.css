@@ -61,13 +61,13 @@
 .lts {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
-.lts img {
+/* .lts img {
   width: 250px;
-}
+} */
 
 .c {
   width: 450px;

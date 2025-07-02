@@ -61,7 +61,7 @@
 .lts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .c {
-  width: 350px;
-  text-align: left;
+  width: 450px;
+  text-align: center;
 }
 
 .c span {

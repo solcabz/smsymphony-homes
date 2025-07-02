@@ -5,6 +5,7 @@ function initCarousel(id) {
     const images = imagesContainer.querySelectorAll('img');
     let currentIndex = 0;
 
+    // Create indicator dots
     images.forEach((_, idx) => {
         const dot = document.createElement('span');
         dot.classList.add('indicator');
@@ -17,6 +18,7 @@ function initCarousel(id) {
         indicatorsContainer.appendChild(dot);
     });
 
+    // Update carousel position and active indicator
     function updateCarousel() {
         const offset = -currentIndex * 100;
         imagesContainer.style.transform = `translateX(${offset}%)`;
@@ -36,6 +38,35 @@ function initCarousel(id) {
         clearInterval(slideInterval);
         slideInterval = setInterval(nextSlide, 5000);
     }
+
+    // ✅ Swipe Support
+    let startX = 0;
+    let endX = 0;
+
+    imagesContainer.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    imagesContainer.addEventListener('touchmove', (e) => {
+        endX = e.touches[0].clientX;
+    });
+
+    imagesContainer.addEventListener('touchend', () => {
+        const diffX = endX - startX;
+        if (Math.abs(diffX) > 50) { // threshold
+            if (diffX < 0) {
+                // Swipe left – next slide
+                currentIndex = (currentIndex + 1) % images.length;
+            } else {
+                // Swipe right – previous slide
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+            }
+            updateCarousel();
+            resetAutoSlide();
+        }
+        startX = 0;
+        endX = 0;
+    });
 
     updateCarousel();
 }

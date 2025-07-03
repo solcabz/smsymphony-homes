@@ -37,6 +37,11 @@ h1 {
   width: 100%;
   text-align: left;
 }
+
+.smdc-text p{
+  width: 100%;
+  text-align: left;
+}
 .smdc-text h2{
   width: 100%;
   text-align: left;
@@ -90,7 +95,7 @@ h1 {
 }
 .smdc-desc{
   font-size: 1.4rem !important;
-  width: 520px!important;
+  width: 100%!important;
 }
 /* Responsive adjustments */
 @media (max-width: 1028px) {

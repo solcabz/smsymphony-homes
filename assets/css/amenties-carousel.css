@@ -11,7 +11,7 @@
   /* background col000f73r */
   color: #ffffff;
   padding: 1.5rem 80px;
-  width: 700px;
+  width: 35%;
   height: 100dvh;
   z-index: 2;
   display: flex;
@@ -64,7 +64,7 @@
 
 .carousel-wrapper {
   position: relative;
-  width: 100%;
+  width: 65%;
 }
 
 .carousel {

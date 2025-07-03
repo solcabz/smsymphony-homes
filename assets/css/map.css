@@ -14,9 +14,9 @@
   height: 100%;
   padding-left: 80px;
   padding-right: 0px;
-  background-color: #ffffff;
+  background-color: #002349;
   position: relative;
-  background-image: url(../images/note-blue.png);
+  background-image: url(../images/note-white.png);
   background-size: 980px auto;
   /* example width */
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@
   left: 8rem;
   z-index: 2;
   margin: 0;
-  color: #002349;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,9 +71,9 @@
 
 .pin {
   position: absolute;
-  top: 49%;
+  top: 68%;
   /* adjust this to move the pin vertically */
-  left: 59%;
+  left: 74%;
   /* adjust this to move the pin horizontally */
   transform: translate(-50%, -100%);
   /* align bottom center of pin */
@@ -82,7 +82,7 @@
 }
 
 .pin-image {
-  width: 8rem !important;
+  width: 4rem !important;
   height: auto !important;
   pointer-events: auto;
   animation: pinBounce 1.2s infinite;
@@ -92,7 +92,7 @@
   position: absolute;
   top: 95%;
   /* adjust this to move the pin vertically */
-  right: 9%;
+  right: 5%;
   /* adjust this to move the pin horizontally */
   transform: translate(-50%, -100%);
   /* align bottom center of pin */

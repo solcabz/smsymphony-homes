@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8rem 1rem 8rem 8rem;
+  padding: 8rem 1rem 8rem 80px;
   z-index: 2;
 }
 

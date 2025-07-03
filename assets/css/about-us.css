@@ -49,7 +49,7 @@
   object-fit: cover;
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
   mask-image: linear-gradient(to right, transparent 0%, black 20%);
-}
+} 
 
 /* ---------------------- */
 /* 🔶 Tablet: 768px–1023px */

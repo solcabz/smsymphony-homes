@@ -24,8 +24,28 @@ h1 {
 
 .smdc-text{
   height: 100%;
+  width: 35%;
   color: #203d83;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 80px;
 }
+.smdc-text h1{
+  width: 100%;
+  text-align: left;
+}
+.smdc-text h2{
+  width: 100%;
+  text-align: left;
+}
+.learn-more {
+  width: 100%;
+  text-align: left;
+}
+
 
 .learn-more a{
   text-decoration: none;
@@ -35,14 +55,19 @@ h1 {
 }
 
 
-
 .learn-more a:hover{
   color: #b89e49;
 }
 
 
 .smdc-image{
+  width:65%;
   height: 100%;
+}
+
+.smdc-image img{
+  height:100%;
+  width: 100%;
 }
 
 .animated-title,
@@ -83,7 +108,7 @@ h1 {
   .smdc-desc{
     font-size: 1.3rem;
   }
-
+  
 }
 
 @media (max-width: 728px) {
@@ -98,5 +123,24 @@ h1 {
   .smdc-desc{
     font-size: 1  rem;
   }
+
+  .smdc-text h1{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+}
+.smdc-text h2{
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0 1.5rem;
+}
+.learn-more {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1.5rem;
+}
 
 }

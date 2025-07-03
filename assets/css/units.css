@@ -6,7 +6,6 @@
 
 .units-section {
     flex: 1;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +45,7 @@
 
 .units-title-wrapper {
     width: 100%;
-    padding: 7rem 8rem 0 8rem;
+    padding: 7rem 80px 0 80px;
 }
 
 .units-title-wrapper>p {

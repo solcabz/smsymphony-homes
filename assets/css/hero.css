@@ -75,7 +75,7 @@
   }
 
   .home-title {
-    top: 4rem;
+    top: 6rem;
     left: 0;
     text-align: center;
     padding: 3rem 1.5rem;
@@ -93,7 +93,7 @@
 
 @media (max-width: 480px) {
   .home-title {
-    top: 8rem;
+    top: 4rem;
     left: 0;
   }
 

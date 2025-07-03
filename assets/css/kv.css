@@ -85,10 +85,14 @@
 }
   .vid-info h1{
   font-size: 2rem;
+  
 }
 
 .vid-info p{
   text-align: center;
   font-size: 1rem;
+  padding: 3rem 1.5rem;
+  width: 100%;
 }
+
 }

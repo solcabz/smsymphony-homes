@@ -34,9 +34,7 @@ h1 {
   font-weight: 600;
 }
 
-.smdc-desc{
-  font-size: 1.4rem;
-}
+
 
 .learn-more a:hover{
   color: #b89e49;
@@ -65,7 +63,10 @@ h1 {
   transform: translateY(0);
   transition-delay: 0.4s; /* delay the paragraph */
 }
-
+.smdc-desc{
+  font-size: 1.4rem !important;
+  width: 520px!important;
+}
 /* Responsive adjustments */
 @media (max-width: 1028px) {
    .smdc-content{

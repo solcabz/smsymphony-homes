@@ -21,8 +21,11 @@
 
 /* Title container */
 .home-title {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 15rem;
+  gap: 2rem;
+  top: 12rem;
   left: 8rem;
   z-index: 2;
   margin: 0;

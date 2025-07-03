@@ -126,7 +126,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -207,5 +207,28 @@
   /* Pseudo-element for background image with opacity */
   .amenities-info::before {
     width: 250px;
+  }
+
+  .amenities-info h1{
+    text-align: center;
+  }
+  .amenities-info p{
+    text-align: center;
+  }
+  .carousel-wrapper{
+    width: 100%;
+}
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 5px;
+  height: 5px;
+}
+
+
+  .view-map{
+    right: 20%;
   }
 }

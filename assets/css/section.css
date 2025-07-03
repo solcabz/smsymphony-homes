@@ -121,7 +121,13 @@ h1 {
   }
 
   .smdc-desc{
-    font-size: 1  rem;
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+
+  .smdc-text{
+    width: 100%;
+    padding: 1rem 1.5rem;
   }
 
   .smdc-text h1{
@@ -135,6 +141,13 @@ h1 {
   text-align: center;
   font-size: 1.4rem;
   padding: 0 1.5rem;
+}
+
+ .smdc-text h1 p{
+  font-size: 1rem;
+}
+.smdc-image{
+  width: 100%;
 }
 .learn-more {
   width: 100%;

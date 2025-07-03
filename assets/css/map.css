@@ -75,9 +75,9 @@
 
 .pin {
   position: absolute;
-  top: 68%;
+  top: 62%;
   /* adjust this to move the pin vertically */
-  left: 74%;
+  left: 68%;
   /* adjust this to move the pin horizontally */
   transform: translate(-50%, -100%);
   /* align bottom center of pin */
@@ -86,7 +86,7 @@
 }
 
 .pin-image {
-  width: 4rem !important;
+  width: 6rem !important;
   height: auto !important;
   pointer-events: auto;
   animation: pinBounce 1.2s infinite;

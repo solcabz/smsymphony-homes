@@ -25,14 +25,14 @@ menuItems.forEach(link => {
 });
 
 // Show/hide button based on scroll position
-window.onscroll = function () {
-  const btn = document.getElementById("backToTop");
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
+// window.onscroll = function () {
+//   const btn = document.getElementById("backToTop");
+//   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//     btn.style.display = "block";
+//   } else {
+//     btn.style.display = "none";
+//   }
+// };
 
 // Smooth scroll to top
 document.getElementById("backToTop").addEventListener("click", function () {
@@ -171,4 +171,18 @@ document.addEventListener('DOMContentLoaded', function () {
   elements.forEach(el => {
     observer.observe(el);
   });
+});
+
+const video = document.getElementById('custom-video');
+const playBtn = document.getElementById('custom-play-button');
+
+playBtn.addEventListener('click', () => {
+  video.setAttribute('controls', true); // Show controls
+  video.play();
+  playBtn.style.display = 'none'; // Hide play button
+});
+
+video.addEventListener('ended', () => {
+  playBtn.style.display = 'flex'; // Show play button again on end
+  video.removeAttribute('controls'); // Optional: remove controls again after end
 });

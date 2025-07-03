@@ -22,7 +22,7 @@
 /* Title container */
 .home-title {
   position: absolute;
-  top: 8rem;
+  top: 15rem;
   left: 8rem;
   z-index: 2;
   margin: 0;
@@ -35,7 +35,7 @@
 
 .home-title p {
   font-size: 1.4rem;
-  width: 680px;
+  width: 560px;
 }
 
 /* ---------------------- */

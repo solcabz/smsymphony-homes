@@ -43,6 +43,11 @@
   margin-bottom: 1rem;
 }
 
+.amenities-info P{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
 .amenities-info ul {
   list-style: disc;
   columns: 2;
@@ -176,6 +181,11 @@
     font-size: 1rem;
     margin-bottom: 0.3rem;
   }
+
+  .amenities-info P{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
 
   .carousel {
     height: 300px;

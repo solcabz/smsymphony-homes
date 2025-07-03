@@ -170,14 +170,13 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .map-wrapper{
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 3rem 1.5rem;
 }
 
 .map-wrapper p{
   width: 100%;
 }
-
 
 .view-map{
   /* adjust this to move the pin vertically */

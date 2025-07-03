@@ -20,8 +20,9 @@ function initCarousel(id) {
 
     // Update carousel position and active indicator
     function updateCarousel() {
-        const offset = -currentIndex * 100;
-        imagesContainer.style.transform = `translateX(${offset}%)`;
+        const imageWidth = images[0].offsetWidth;
+        const offset = -currentIndex * imageWidth;
+        imagesContainer.style.transform = `translateX(${offset}px)`;
         indicatorsContainer.querySelectorAll('.indicator').forEach((dot, idx) => {
             dot.classList.toggle('active', idx === currentIndex);
         });

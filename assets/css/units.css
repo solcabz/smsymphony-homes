@@ -1,6 +1,7 @@
 .units-flex-container {
     display: flex;
     color: #fff;
+    gap: 50px;
 }
 
 .units-section {
@@ -9,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 104);
+    background-color: #002349;
     height: 100%;
     padding-bottom: 4rem;
 }
@@ -19,12 +20,12 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 
 .units-carousel {
-    width: 100%;
-    /* max-width: 400px; */
+    width: 700px;
     position: relative;
     overflow: hidden;
 }
@@ -32,11 +33,11 @@
 .units-carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
+    width: max-content;
 }
 
 .units-carousel-images img {
-    width: 100%;
+    width: 700px;
     height: 500px;
     object-fit: cover;
     flex-shrink: 0;
@@ -50,7 +51,7 @@
 
 .units-title-wrapper>p {
     font-size: 1.3rem;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #fff;
 }
 
@@ -86,7 +87,7 @@
 .info-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 700px;
     margin-top: 15px;
     padding: 15px 20px 0 20px;
 }
@@ -136,6 +137,28 @@
     font-weight: 600;
 }
 
+/* Small Laptop or Desktop */
+@media (max-width: 1600px) {
+    .units-carousel {
+        width: 80vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .units-carousel-images img {
+        width: 80vw;
+        height: 300px;
+        border-radius: 16px;
+    }
+
+    .info-container {
+        width: 80vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 /* Tablet and below */
 @media (max-width: 1028px) {
     .units-flex-container {
@@ -147,8 +170,14 @@
         border-radius: 16px;
     }
 
+    .units-carousel {
+        width: 80vw;
+        position: relative;
+        overflow: hidden;
+    }
 
     .units-carousel-images img {
+        width: 80vw;
         height: 300px;
         border-radius: 16px;
     }
@@ -173,6 +202,7 @@
     }
 
     .info-container {
+        width: 80vw;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -192,7 +222,7 @@
     .price {
         text-align: center;
     }
-    
+
     .hr-rounded {
         display: block;
         margin: 1rem 0;

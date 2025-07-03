@@ -13,10 +13,10 @@
   width: 35%;
   height: 100%;
   padding-left: 80px;
-  padding-right: 20px;
-  background-color: rgb(0, 0, 104);
+  padding-right: 0px;
+  background-color: #ffffff;
   position: relative;
-  background-image: url(../images/note-white.png);
+  background-image: url(../images/note-blue.png);
   background-size: 980px auto;
   /* example width */
   background-repeat: no-repeat;
@@ -24,16 +24,6 @@
   /* move up 15px from bottom */
 }
 
-.map-info ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-.map-info li {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  list-style: disc;
-}
 
 .image-map-wrapper {
   width: 65%;
@@ -55,7 +45,7 @@
   left: 8rem;
   z-index: 2;
   margin: 0;
-  color: #fff;
+  color: #002349;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +56,7 @@
 
 .map-wrapper p {
   font-size: 1.4rem;
+  width: 520px;
 }
     
 .image-map-wrapper {

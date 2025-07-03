@@ -25,14 +25,14 @@ menuItems.forEach(link => {
 });
 
 // Show/hide button based on scroll position
-// window.onscroll = function () {
-//   const btn = document.getElementById("backToTop");
-//   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-//     btn.style.display = "block";
-//   } else {
-//     btn.style.display = "none";
-//   }
-// };
+window.onscroll = function () {
+  const btn = document.getElementById("backToTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
 
 // Smooth scroll to top
 document.getElementById("backToTop").addEventListener("click", function () {

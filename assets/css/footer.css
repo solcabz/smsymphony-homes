@@ -1,11 +1,6 @@
 .footer-section {
   padding: 20px 80px;
   background-color: #002349;
-  background-image: url(../images/note-white.png);
-  background-size: 850px auto;
-  /* example width */
-  background-repeat: no-repeat;
-  background-position: left 0 top 10rem;
 }
 
 .footer-wrapper {

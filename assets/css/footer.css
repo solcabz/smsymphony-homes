@@ -156,6 +156,10 @@
     width: 100%;
   }
 
+  .address p{
+    width: 100%;
+  }
+
   .copyright {
     font-size: 1rem;
   }

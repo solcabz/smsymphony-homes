@@ -191,7 +191,7 @@
 
 .view-map{
   /* adjust this to move the pin vertically */
-  right: 9%;
+  right: 9% !important;
   font-size: 16px;
 }
 

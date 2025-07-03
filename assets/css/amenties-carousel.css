@@ -7,8 +7,8 @@
 .amenities-info {
   position: relative;
   /* Required for pseudo-element positioning */
-  background: #002349;
-  /* background color */
+  background: #000f73;
+  /* background col000f73r */
   color: #ffffff;
   padding: 1.5rem 80px;
   width: 700px;

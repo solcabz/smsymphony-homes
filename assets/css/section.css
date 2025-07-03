@@ -120,9 +120,14 @@ h1 {
     font-size: 1;
   }
 
+  .smdc-content{
+    padding:  1rem 0;
+  }
+
   .smdc-desc{
     font-size: 1rem !important;
     width: 100% !important;
+    text-align: center;
   }
 
   .smdc-text{
@@ -135,6 +140,7 @@ h1 {
   text-align: center;
   font-size: 2rem;
   padding: 0 1.5rem;
+  margin: 0;
 }
 .smdc-text h2{
   width: 100%;

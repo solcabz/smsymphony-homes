@@ -180,10 +180,13 @@
 
 .map-title{
   width: 100% !important;
+  font-size: 2rem ;
 }
+
 
 .map-wrapper p{
   width: 100%;
+  font-size: 1rem;
 }
 
 .view-map{

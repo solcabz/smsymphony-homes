@@ -129,7 +129,7 @@
       position: absolute;
       top: 90px;
       right: 0;
-      background: #ffffff;
+      background-color: #002349;
       width: 100%;
       height: 100dvh;
       flex-direction: column;
@@ -152,6 +152,7 @@
 
     .menu-item a {
       font-size: 35px;
+      
     }
 
     .menu-toggle {

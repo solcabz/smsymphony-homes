@@ -156,8 +156,13 @@
     width: 100%;
   }
 
-  .address p{
+  .address{
     width: 100%;
+    flex: wrap;
+  }
+
+  .address p{
+    width: 100%
   }
 
   .copyright {

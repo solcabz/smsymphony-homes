@@ -73,7 +73,7 @@
 .kv-section {
   /* 16:9 aspect ratio (h/w) */
   height: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 #custom-play-button { 
   width: 50px;
@@ -100,5 +100,11 @@
   padding: 3rem 1.5rem;
   width: 100%;
 }
+.vid-info{
+  gap: 1rem;
+}
 
+.vid-info p{
+  padding: 0 1.5rem;
+}
 }

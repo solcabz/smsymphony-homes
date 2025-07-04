@@ -60,7 +60,7 @@
 
   .title-wrapper {
     width: 100%;
-    padding: 2rem 1.5rem; /* ✅ Mobile-safe padding */
+    padding: 3rem 1.5rem; /* ✅ Mobile-safe padding */
     align-items: center;
     text-align: center;
   }
@@ -86,6 +86,6 @@
   }
 
   .title-wrapper {
-    padding: 1.5rem 1rem; /* ✅ Reduced left/right padding */
+    padding: 3rem 1.5rem; /* ✅ Reduced left/right padding */
   }
 }

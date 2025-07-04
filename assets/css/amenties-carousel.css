@@ -139,7 +139,7 @@
   height: 12px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.6);
+  background: #000f73;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -152,6 +152,7 @@
   color: #ffc70e;
   font-weight: bold;
 }
+
 
 /* Responsive */
 @media (max-width: 1028px) {
@@ -209,8 +210,14 @@
     width: 250px;
   }
 
+  .amenities-info{
+    padding-bottom: 4rem;
+    height: 100%;
+  }
+
   .amenities-info h1{
     text-align: center;
+    padding-bottom: 2rem;
   }
   .amenities-info p{
     text-align: center;
@@ -219,7 +226,7 @@
     width: 100%;
 }
 .carousel-indicators {
-  bottom: 20px;
+  bottom: -20px;
 }
 
 .carousel-indicators button {

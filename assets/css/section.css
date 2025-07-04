@@ -22,13 +22,18 @@ h1 {
   overflow: hidden;
 }
 
+
+.smdc-logo{
+  width: 150px;
+  padding-bottom: 3rem;
+}
 .smdc-text{
   height: 100%;
   width: 35%;
   color: #203d83;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: left;
   padding: 80px;
@@ -127,6 +132,7 @@ h1 {
 
   .smdc-content{
     padding:  1rem 0;
+    
   }
 
   .smdc-desc{
@@ -138,6 +144,9 @@ h1 {
   .smdc-text{
     width: 100%;
     padding: 1rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+     padding: 3rem 1.5rem;
   }
 
   .smdc-text h1{
@@ -154,15 +163,20 @@ h1 {
   padding: 0 1.5rem;
 }
 
+.smdc-desc{
+  text-align: center !important;
+}
+
  .smdc-text h1 p{
   font-size: 1rem;
+  text-align: center;
 }
 .smdc-image{
   width: 100%;
 }
 .learn-more {
   width: 100%;
-  text-align: center;
+  text-align: center !important;
   font-size: 1rem;
   padding: 0 1.5rem;
 }
